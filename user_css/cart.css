@@ -1,0 +1,136 @@
+/* cart.css */
+
+/* Body */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2e7d32 !important; /* primary green for grocery branding */
+}
+
+.navbar .nav-link.active {
+    background-color: #1b5e20;
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.navbar .nav-link {
+    color: #e8f5e9 !important;
+    margin-left: 5px;
+    transition: background 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #1b5e20;
+    border-radius: 8px;
+}
+
+/* Card */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border: none;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Card Header (if any) */
+.card-header {
+    background-color: #43a047; /* green for grocery branding */
+    color: #fff;
+    font-weight: 600;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Table */
+.table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #a5d6a7; /* light green header */
+}
+
+.table thead th {
+    border: none;
+    color: #1b5e20;
+}
+
+.table tbody tr:hover {
+    background-color: #e8f5e9; /* subtle green hover */
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: #1b5e20;
+}
+
+.btn-success {
+    background-color: #43a047;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-success:hover {
+    background-color: #2e7d32;
+}
+
+.btn-secondary {
+    background-color: #ff9800;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #f57c00;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.alert-success {
+    background-color: #d0f0c0;
+    color: #2e7d32;
+}
+
+.alert-info {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+/* Input Quantity */
+input[type="number"] {
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Footer spacing for buttons */
+.mt-3 {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}

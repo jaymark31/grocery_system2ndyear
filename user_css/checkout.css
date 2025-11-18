@@ -1,0 +1,150 @@
+/* checkout.css */
+
+/* Body */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2e7d32 !important; /* primary green */
+}
+
+.navbar .nav-link.active {
+    background-color: #1b5e20;
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.navbar .nav-link {
+    color: #e8f5e9 !important;
+    margin-left: 5px;
+    transition: background 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #1b5e20;
+    border-radius: 8px;
+}
+
+/* Card */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #43a047; /* green for grocery branding */
+    color: #fff;
+    font-weight: 600;
+    border-radius: 12px 12px 0 0;
+    padding: 1rem 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Tables */
+.table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #a5d6a7; /* light green headers */
+}
+
+.table thead th {
+    border: none;
+    color: #1b5e20;
+}
+
+.table tbody tr:hover {
+    background-color: #e8f5e9; /* subtle green hover */
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #43a047;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #2e7d32;
+}
+
+.btn-primary {
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1b5e20;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.alert-danger {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+.alert-warning {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+/* Form Inputs */
+.form-control {
+    border-radius: 8px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* Order Total Card */
+.card-body .d-flex span,
+.card-body .d-flex strong {
+    font-size: 1rem;
+}
+
+.card-body hr {
+    margin: 1rem 0;
+}
+
+/* Responsive spacing for buttons in alerts or empty cart */
+.btn {
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body table {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,141 @@
+/* === Register Page Styles (Two-Panel Layout) === */
+body {
+    margin: 0;
+    padding: 0;
+    background: #e6ebf5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.register-wrapper {
+    width: 950px;
+    max-width: 95%;
+    height: 600px;
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 18px 50px rgba(0,0,0,0.18);
+}
+
+/* ===== LEFT — REGISTRATION FORM ===== */
+.left-section {
+    width: 50%;
+    background: white;
+    padding: 3rem 3.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.left-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1d1d1d;
+}
+
+.left-section p {
+    font-size: 0.95rem;
+    color: #7d8aa2;
+    margin-bottom: 2rem;
+}
+
+/* Input Labels */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.4rem;
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.form-control:focus {
+    border-color: #2468f6;
+    background: #ffffff;
+    outline: none;
+}
+
+/* Register Button */
+.btn-primary {
+    width: 100%;
+    padding: 0.85rem;
+    border-radius: 10px;
+    background: #0b5ce7;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #084ac2;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0,70,200,0.35);
+}
+
+/* Already have account? */
+.login-link {
+    margin-top: 1.7rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6f7a93;
+}
+
+.login-link a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #2468f6;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RIGHT — BLUE PANEL / ILLUSTRATION ===== */
+.right-section {
+    width: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.right-section img {
+    width: 75%;
+    max-width: 300px;
+    margin-bottom: 1.2rem;
+}
+
+.right-section h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.right-section p {
+    width: 75%;
+    font-size: 0.95rem;
+    opacity: 0.92;
+}

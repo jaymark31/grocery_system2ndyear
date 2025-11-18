@@ -1,0 +1,256 @@
+/* Custom CSS for Grocery Store Branding */
+:root {
+    --primary-green: #28a745;
+    --light-green: #d4edda;
+    --subtle-green: #f8fff9;
+    --dark-green: #218838;
+    --orange-accent: #fd7e14;
+    --light-orange: #ffe0c2;
+    --border-radius: 0.75rem;
+    --spacing: 1.5rem;
+}
+
+/* Card Headers - Green for Grocery Branding */
+.card-header {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+    padding: var(--spacing);
+    font-weight: 600;
+    border: none;
+}
+
+.card {
+    border-radius: var(--border-radius) !important;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing);
+}
+
+/* Tables - White background, headers light green, hover subtle green */
+.table {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: var(--light-green) !important;
+    color: #155724;
+    border-bottom: 2px solid var(--primary-green);
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: var(--subtle-green) !important;
+}
+
+.table tbody td {
+    padding: 1rem;
+    border-color: #e9ecef;
+    vertical-align: middle;
+}
+
+/* Buttons - Primary green, secondary orange accent */
+.btn-primary {
+    background-color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green) !important;
+    border-color: var(--dark-green) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: var(--orange-accent) !important;
+    border-color: var(--orange-accent) !important;
+    color: white !important;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e06c00 !important;
+    border-color: #e06c00 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(253, 126, 20, 0.3);
+}
+
+.btn-outline-secondary {
+    color: var(--orange-accent) !important;
+    border-color: var(--orange-accent) !important;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--orange-accent) !important;
+    color: white !important;
+    transform: translateY(-1px);
+}
+
+/* Alerts - Green theme for info/success */
+.alert-info, .alert-success {
+    background-color: var(--light-green);
+    border-color: #c3e6cb;
+    color: #155724;
+    border-radius: var(--border-radius);
+    padding: var(--spacing);
+    border-left: 4px solid var(--primary-green);
+}
+
+/* Modern spacing and layout improvements */
+.container {
+    padding: var(--spacing);
+}
+
+.row.g-4 {
+    gap: var(--spacing);
+}
+
+.mb-4 {
+    margin-bottom: var(--spacing) !important;
+}
+
+.my-4 {
+    margin-top: var(--spacing) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Form controls with modern styling */
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Navigation bar enhancements */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-dark.bg-primary {
+    background-color: var(--primary-green) !important;
+}
+
+/* Product card enhancements */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .card-body {
+    padding: var(--spacing);
+}
+
+/* Badge styling */
+.badge {
+    border-radius: 0.375rem;
+    font-weight: 500;
+    padding: 0.5em 0.75em;
+}
+
+.bg-success {
+    background-color: var(--primary-green) !important;
+}
+
+.bg-warning {
+    background-color: var(--orange-accent) !important;
+}
+
+/* Input group enhancements */
+.input-group .form-control {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.input-group .btn {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Center product cards */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center horizontally */
+    gap: var(--spacing);
+    padding: var(--spacing);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    :root {
+        --spacing: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Additional utility classes for grocery theme */
+.text-primary {
+    color: var(--primary-green) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-green) !important;
+}
+
+.bg-light-green {
+    background-color: var(--light-green) !important;
+}
+
+.bg-subtle-green {
+    background-color: var(--subtle-green) !important;
+}
